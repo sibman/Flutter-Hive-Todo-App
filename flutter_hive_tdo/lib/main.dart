@@ -35,6 +35,7 @@ Future<void> main() async {
 class BaseWidget extends InheritedWidget {
   BaseWidget({Key? key, required this.child}) : super(key: key, child: child);
   final HiveDataStore dataStore = HiveDataStore();
+  @override
   final Widget child;
 
   static BaseWidget of(BuildContext context) {
@@ -62,38 +63,38 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Hive Todo App',
       theme: ThemeData(
         textTheme: const TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             color: Colors.black,
             fontSize: 45,
             fontWeight: FontWeight.bold,
           ),
-          subtitle1: TextStyle(
+          titleMedium: TextStyle(
             color: Colors.grey,
             fontSize: 16,
             fontWeight: FontWeight.w300,
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
             color: Colors.white,
             fontSize: 21,
           ),
-          headline3: TextStyle(
+          displaySmall: TextStyle(
             color: Color.fromARGB(255, 234, 234, 234),
             fontSize: 14,
             fontWeight: FontWeight.w400,
           ),
-          headline4: TextStyle(
+          headlineMedium: TextStyle(
             color: Colors.grey,
             fontSize: 17,
           ),
-          headline5: TextStyle(
+          headlineSmall: TextStyle(
             color: Colors.grey,
             fontSize: 16,
           ),
-          subtitle2: TextStyle(
+          titleSmall: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w500,
           ),
-          headline6: TextStyle(
+          titleLarge: TextStyle(
             fontSize: 40,
             color: Colors.black,
             fontWeight: FontWeight.w300,

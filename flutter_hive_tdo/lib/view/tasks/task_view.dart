@@ -201,8 +201,8 @@ class _TaskViewState extends State<TaskView> {
                       Navigator.pop(context);
                     },
                     color: Colors.white,
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         Icon(
                           Icons.close,
                           color: MyColors.primaryColor,
@@ -259,7 +259,7 @@ class _TaskViewState extends State<TaskView> {
           Padding(
             padding: const EdgeInsets.only(left: 30),
             child: Text(MyString.titleOfTitleTextField,
-                style: textTheme.headline4),
+                style: textTheme.headlineMedium),
           ),
 
           /// Title TextField
@@ -351,7 +351,7 @@ class _TaskViewState extends State<TaskView> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
                     child:
-                        Text(MyString.timeString, style: textTheme.headline5),
+                        Text(MyString.timeString, style: textTheme.headlineSmall),
                   ),
                   Expanded(child: Container()),
                   Container(
@@ -364,7 +364,7 @@ class _TaskViewState extends State<TaskView> {
                     child: Center(
                       child: Text(
                         showTime(time),
-                        style: textTheme.subtitle2,
+                        style: textTheme.titleSmall,
                       ),
                     ),
                   )
@@ -405,7 +405,7 @@ class _TaskViewState extends State<TaskView> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
                     child:
-                        Text(MyString.dateString, style: textTheme.headline5),
+                        Text(MyString.dateString, style: textTheme.headlineSmall),
                   ),
                   Expanded(child: Container()),
                   Container(
@@ -418,7 +418,7 @@ class _TaskViewState extends State<TaskView> {
                     child: Center(
                       child: Text(
                         showDate(date),
-                        style: textTheme.subtitle2,
+                        style: textTheme.titleSmall,
                       ),
                     ),
                   )
@@ -451,7 +451,7 @@ class _TaskViewState extends State<TaskView> {
                 text: isTaskAlreadyExistBool()
                     ? MyString.addNewTask
                     : MyString.updateCurrentTask,
-                style: textTheme.headline6,
+                style: textTheme.titleLarge,
                 children: const [
                   TextSpan(
                     text: MyString.taskStrnig,

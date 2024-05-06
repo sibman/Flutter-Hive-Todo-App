@@ -129,12 +129,12 @@ class _HomeViewState extends State<HomeView> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(MyString.mainTitle, style: textTheme.headline1),
+                    Text(MyString.mainTitle, style: textTheme.displayLarge),
                     const SizedBox(
                       height: 3,
                     ),
                     Text("${checkDoneTask(tasks)} of ${tasks.length} task",
-                        style: textTheme.subtitle1),
+                        style: textTheme.titleMedium),
                   ],
                 )
               ],
@@ -163,9 +163,9 @@ class _HomeViewState extends State<HomeView> {
 
                       return Dismissible(
                         direction: DismissDirection.horizontal,
-                        background: Row(
+                        background: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Icon(
                               Icons.delete_outline,
                               color: Colors.grey,
@@ -262,8 +262,8 @@ class MySlider extends StatelessWidget {
           const SizedBox(
             height: 8,
           ),
-          Text("AmirHossein Bayat", style: textTheme.headline2),
-          Text("junior flutter dev", style: textTheme.headline3),
+          Text("AmirHossein Bayat", style: textTheme.displayMedium),
+          Text("junior flutter dev", style: textTheme.displaySmall),
           Container(
             margin: const EdgeInsets.symmetric(
               vertical: 30,

@@ -115,7 +115,8 @@ class _HomeViewState extends State<HomeView> {
                   width: 25,
                   height: 25,
                   child: CircularProgressIndicator(
-                    valueColor: const AlwaysStoppedAnimation(MyColors.primaryColor),
+                    valueColor:
+                        const AlwaysStoppedAnimation(MyColors.primaryColor),
                     backgroundColor: Colors.grey,
                     value: checkDoneTask(tasks) / valueOfTheIndicator(tasks),
                   ),
@@ -303,8 +304,9 @@ class MySlider extends StatelessWidget {
 }
 
 /// My App Bar
-class MyAppBar extends StatefulWidget with PreferredSizeWidget {
-  MyAppBar({Key? key, 
+class MyAppBar extends StatefulWidget implements PreferredSizeWidget {
+  MyAppBar({
+    Key? key,
     required this.drawerKey,
   }) : super(key: key);
   GlobalKey<SliderDrawerState> drawerKey;

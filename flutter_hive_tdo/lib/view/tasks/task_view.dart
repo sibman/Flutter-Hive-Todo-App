@@ -304,7 +304,8 @@ class _TaskViewState extends State<TaskView> {
                 controller: widget.taskControllerForSubtitle,
                 style: const TextStyle(color: Colors.black),
                 decoration: InputDecoration(
-                  prefixIcon: const Icon(Icons.bookmark_border, color: Colors.grey),
+                  prefixIcon:
+                      const Icon(Icons.bookmark_border, color: Colors.grey),
                   border: InputBorder.none,
                   counter: Container(),
                   hintText: MyString.addNote,
@@ -350,8 +351,8 @@ class _TaskViewState extends State<TaskView> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
-                    child:
-                        Text(MyString.timeString, style: textTheme.headlineSmall),
+                    child: Text(MyString.timeString,
+                        style: textTheme.headlineSmall),
                   ),
                   Expanded(child: Container()),
                   Container(
@@ -404,8 +405,8 @@ class _TaskViewState extends State<TaskView> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
-                    child:
-                        Text(MyString.dateString, style: textTheme.headlineSmall),
+                    child: Text(MyString.dateString,
+                        style: textTheme.headlineSmall),
                   ),
                   Expanded(child: Container()),
                   Container(
@@ -474,7 +475,7 @@ class _TaskViewState extends State<TaskView> {
 }
 
 /// AppBar
-class MyAppBar extends StatelessWidget with PreferredSizeWidget {
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppBar({
     Key? key,
   }) : super(key: key);

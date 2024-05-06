@@ -1,8 +1,8 @@
 # Flutter Hive Todo App
 ## ToDo App using Flutter implemented with Hive DataBase 
 
-### [Watch on YouTube](https://youtube.com/playlist?list=PLWhSmdyhZUVSZBXZUEUNQnEPZwrhzMz_H&si=pdWClHTx6FVALPlm)
-![Untitled-1](https://github.com/AmirBayat0/Flutter-Hive-Todo-App/assets/91388754/bf9510e4-9f57-42ca-8dd3-ee737d3a7208)
+### [Watch on YouTube](https://youtu.be/RQlhC_rDrsc)
+[![Main](https://img.youtube.com/vi/RQlhC_rDrsc/0.jpg)](https://www.youtube.com/watch?v=RQlhC_rDrsc)
 
 #### Thanks For supporting❤!
 
